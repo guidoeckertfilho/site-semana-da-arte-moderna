@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+* {
+   margin: 0px;
+   padding: 0px;
+ }
+
+ :root {
+    --cor01: #061A26;
+    --cor02: #0D7F8C;
+    --cor03: #0A5159;
+    --cor04: #41D9D9;
+    --cor05: #50F2F2;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-titulo: 'Borel', cursive;
+ }
+
+ body {
+   background-color: var(--cor05);
+   font-family: var(--fonte-padrao);
+}
+
+div.video {
+   background-color: var(--cor02);
+   margin: 0px -20px 30px -20px;
+   padding: 20px;
+   padding-bottom: 59%;
+   position: relative;
+}
+
+div.video > iframe {
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+}
+
+ img {
+   width: 100%;
+   height: auto;
+ }
+
+ header{
+    background-color: var(--cor02);
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+ header > h1 {
+   color: white;
+    font-weight: normal;
+    font-size: 3em;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: var(--font-titulo);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+ }
+
+ header > p {
+   color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 30px;
+ }
+
+ nav {
+    background-color: var(--cor03);
+    padding: 15px;
+ }
+
+ nav > a {
+    color: bisque;
+    text-decoration: none;
+    padding:10px;
+    transition-duration: .5;
+ }
+
+ nav > a:hover {
+    background-color: var(--cor01);
+    border-radius: 10px;
+    color: white;
+ }
+
+ main {
+   background-color: white;
+   padding: 20px;
+   min-width: 300px;
+   max-width: 1000px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+   margin: auto;
+}
+
+main > article {
+   padding: 0px;
+   margin: 0px;
+}
+
+ main > article > h1 {
+   padding: 10px;
+   font-size: 2em;
+ }
+
+ main > article > h2 {
+   padding: 10px;
+   text-indent: 20px;
+ }
+
+ main > article > p {
+   text-align: justify;
+   text-indent: 30px;
+   line-height: 2em;
+   font-size: 1.2em;
+   padding: 10px;
+ }
+
+ .listagem {
+   text-align: center;
+   font-size: 1.6em;
+   padding: 10px;
+   background-color: #41d9d975;
+   border-radius: 10px;
+ }
+
+ footer {
+   background-color: var(--cor03);
+   font-size: 0.8em;
+   color: white;
+   padding: 20px;
+ }
+
+ footer > p {
+   color: white;
+   text-align: center;
+   font-size: 0.9em;
+ }
